@@ -6,7 +6,7 @@ W. Avy, a perspective business owner in Oahu, Hawaii, has reached out for help t
 ## Results - Provide a bulleted list with three major points from the two analysis deliverables. Use images as support where needed.
 ### 3 Key Differences between June and December
 
-	![alt text](Resources/June_weather_summary.png)
+![alt text](Resources/June_weather_summary.png)
 
 - The weather in December is roughly 4 degress cooler than in June. 
     - The average tempes for December (71.04°F) and June (74.94°f) 
