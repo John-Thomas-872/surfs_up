@@ -1,10 +1,9 @@
 # Surfs Up - Module 9
 
-## Overview - Explain the purpose of this analysis.
+## Overview
 W. Avy, a perspective business owner in Oahu, Hawaii, has reached out for help to determine if opening a combination surf and ice cream shop would work year round in Hawaii. In ourder to determing this, we will look at the weather data for the last several years in Oahu during the months of June and December. This gives an idea of the weather in both the summer and winter to help decide the tourist draw that the island recieves during the winter months. 
 
-## Results - Provide a bulleted list with three major points from the two analysis deliverables. Use images as support where needed.
-### 3 Key Differences between June and December
+## Results
 
 June Weather Summary (left) | December Weather Summary (right)
 
@@ -21,4 +20,16 @@ June Weather Summary (left) | December Weather Summary (right)
 
 Overall the weather in December is not that much different than it is in June. The biggest difference in December will be cooler temerpatures in the evenings and overnight. The high temperatures during the day are very similar. Because of the similar high temps all year round, it is safe to say that a combination surf and ice cream shop in Oahu would be a great business to open and would be busy year round. 
 
-## Sumarry - Provide a high-level summary of the results and two additional queries that you would perform to gather more weather data for June and December.
+## Sumarry
+
+The weather throughout the year is pretty constant in Hawaii. This is due to the location of Hawaii in the middle of the ocean and it's location closer to the equator. With this location in the Pacific Ocean it would also be advantageous to look at the amount of rain that Hawaii receives during these months and the 
+
+To find the precipitation for June, run the following code below. 
+
+'precip = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date)==6).all()'
+
+'precip_df = pd.DataFrame(precip)'
+
+'precip_df.describe()'
+    
+The code above would find the precipitation in June. To find the precipitation for December, change the ==6 to ==12 at the end of the code. This also places the list of preciptiation values into a dataframe and produces some summary statistics about the data. 
